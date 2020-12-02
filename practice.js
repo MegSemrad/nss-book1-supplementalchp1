@@ -72,10 +72,10 @@ console.log(finalAddedNumbers);
 const go = (direction, speed) => {
     let carDirectionAndSpeed = ""
     if(speed > 75) {
-        carDirectionAndSpeed = `The car is moving ${direction} at ${speed} mph.`
+        carDirectionAndSpeed = `The car is moving ${direction} at ${speed} mph. SLOW DOWN!`
     }
     else {
-        carDirectionAndSpeed = `The car is moving ${direction} at ${speed} mph. SLOW DOWN!`
+        carDirectionAndSpeed = `The car is moving ${direction} at ${speed} mph.`
     }
     return carDirectionAndSpeed
 };
