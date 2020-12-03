@@ -87,3 +87,41 @@ const mediumSpeed = go("in circles", 12);
 console.log(highSpeed);
 console.log(lowSpeed);
 console.log(mediumSpeed);
+
+
+
+
+
+
+/* Practice : Evens or Odds */
+
+/*
+- DO NOT FINISH THIS SECTION!!!!!!!!!!!
+*/
+
+const digits = [14, 15, 21, 30, 11]
+
+// const evenOrOdd = (numbers) => {
+//     for(const number of numbers) {
+//         if(number % 2 === 0) {
+//             return "Even"
+//         }
+//         else {
+//             return "Odd"
+//         }
+//     }
+// };
+
+const evenOrOdd = (numbers) => {
+    for(var i = 0; i < digits.length; i++) {
+        if (i % 2 === 0) {
+            return "Even"
+        }
+        else {
+            return "Odd"
+        }
+    }
+}
+
+const result = evenOrOdd(digits);
+console.log(result);
