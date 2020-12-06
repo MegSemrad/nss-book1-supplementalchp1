@@ -1,4 +1,4 @@
-/* Introduction : Age In Dog Years */
+/* ------------------------------ Introduction : Age In Dog Years ------------------------------ */
 
 /* 
 - Paramter is a variable that will hold the value of the input
@@ -17,7 +17,7 @@ console.log(dogAge);
 
 
 
-/* Practice : Best In Show */
+/* ------------------------------- Practice : Best In Show ------------------------------------ */
 
 /*
 - Do not forget the === triple equal sign when using if statements
@@ -41,7 +41,7 @@ console.log("When it comes to pets, " + myFavorite);
 
 
 
-/* Practice : Addition */
+/* ---------------------------------- Practice : Addition --------------------------------------*/
 
 /*
 - Note: moving paramaters around in order do nothing in this example to the returned result
@@ -62,7 +62,7 @@ console.log(finalAddedNumbers);
 
 
 
-/* Practice : Self-Driving Cars */
+/* ------------------------------- Practice : Self-Driving Cars ------------------------------ */
 
 /*
 - As moving along, remember to check on spelling
@@ -93,7 +93,7 @@ console.log(mediumSpeed);
 
 
 
-/* Practice : Evens or Odds */
+/* ---------------------------------- Practice : Evens or Odds ---------------------------------- */
 
 /*
 - DO NOT FINISH THIS SECTION!!!!!!!!!!!
@@ -125,3 +125,72 @@ const evenOrOdd = (numbers) => {
 
 const result = evenOrOdd(digits);
 console.log(result);
+
+
+
+
+
+
+
+
+/* ------------------------------------ Practice : Double Functions ------------------------------*/
+
+const words = [
+    "The", "killing", "complex", "houses",
+    "married", "kittens", "and", "single",
+    "soldiers", "and", "their", "kleptomaniacal",
+    "families"
+];
+
+
+const filterByLetter = (words) => {
+    const wantedWords = [];
+    const unwantedWords = [];
+
+    for(const word of words) {
+        if(word.startsWith("k")) {
+            unwantedWords.push(word)
+        }
+        else {
+            wantedWords.push(word)
+        }
+    } 
+    return wantedWords
+};
+
+
+const wantedWordsString = (wantedWords) => {
+    const joingingWordString = wantedWords.join(" ")
+    return joingingWordString
+};
+
+
+const filteredWords = filterByLetter(words);
+const completedString = wantedWordsString(filteredWords);
+
+
+console.log(completedString);
+
+
+
+
+/* ----------------------- Practice : You Can Tune a Piano, but You Can't.... --------------------------*/
+/*
+- To have a random number picked for you = Math.random() method by defaults returns 
+  a number between 0 and 1. Multiple that by 2 and then it will be a number btween 
+  0 and 2. This simulates a coin flip. 
+    - Math.random() * 2
+*/
+
+const catchFish = () => {
+    let chanceOfCatchingFish = Math.random() * 3
+    if(chanceOfCatchingFish === 0.33) {
+        console.log("Sven hooked a tuna! :)")
+    }
+    else {
+        console.log("Sven came up empty-handed. :(")
+    }
+    return chanceOfCatchingFish;
+};
+
+catchFish();
