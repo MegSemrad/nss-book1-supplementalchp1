@@ -17,6 +17,7 @@ console.log(dogAge);
 
 
 
+
 /* ------------------------------- Practice : Best In Show ------------------------------------ */
 
 /*
@@ -39,8 +40,6 @@ console.log("When it comes to pets, " + myFavorite);
 
 
 
-
-
 /* ---------------------------------- Practice : Addition --------------------------------------*/
 
 /*
@@ -55,8 +54,6 @@ const add = (number2, number3, number1) => {
 
 const finalAddedNumbers = add(17, 4, 11);
 console.log(finalAddedNumbers);
-
-
 
 
 
@@ -87,7 +84,6 @@ const mediumSpeed = go("in circles", 12);
 console.log(highSpeed);
 console.log(lowSpeed);
 console.log(mediumSpeed);
-
 
 
 
@@ -125,9 +121,6 @@ const evenOrOdd = (numbers) => {
 
 const result = evenOrOdd(digits);
 console.log(result);
-
-
-
 
 
 
@@ -174,6 +167,7 @@ console.log(completedString);
 
 
 
+
 /* ----------------------- Practice : You Can Tune a Piano, but You Can't.... --------------------------*/
 /*
 - To have a random number picked for you = Math.random() method by defaults returns 
@@ -194,3 +188,45 @@ const catchFish = () => {
 };
 
 catchFish();
+
+
+
+
+
+/* --------------------------- Practice : Fast Food (Multiple Parameters) -------------------------------*/
+
+const orderedMeal = (sandwich, side, drink, dessert) => {
+    const takeOut = {
+        orderedSandwich: sandwich,
+        orderedSide: side,
+        orderedDrink: drink,
+        orderedDessert: dessert
+    };
+    return takeOut
+};
+const meal = orderedMeal("Ham and Cheese", "Fries", "Half and half tea", "brownie");
+console.log(meal);
+
+
+
+
+
+/* ----------------------------- Practice : Same Chores, Different Days ---------------------------------*/
+
+/* Example
+const twice = number => number * 2
+const timesFive = number => number * 5
+const square = number => number * number
+
+
+const bigify = (number, operationFunction) => {
+    const result = operationFunction(number)
+    return result
+}
+
+const number = 7
+const by2 = bigify(number, twice)  // 14
+const by5 = bigify(number, timesFive)  // 35
+const byItself = bigify(number, square)  // 49
+*/
+
